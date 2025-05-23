@@ -1,11 +1,51 @@
+@font-face {
+    font-family: 'nba_heat_south_beachregular';
+    src: url('fonts/nba_heat_south_beach-webfont.woff2') format('woff2'),
+        url('fonts/nba_heat_south_beach-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+
+    font-family: 'nba_heat_south_beachregular', sans-serif;
     margin: 0;
     color: white;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box
 }
 
 .container {
     display: flex;
     justify-content: space-around;
-    max-width: 50%;
+    max-width: 90vw;
+    background-color: black;
+    padding: 5rem;
+    gap: 2rem;
+}
+
+.teams-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-h3{
+    font-size: 2rem;
+
+}
+.score-div {
+    background-color: #0bd3d3;
+    font-size: 2rem;
+    padding: 0.5rem 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.score-div span {
+    color: #f890e7;
 }
