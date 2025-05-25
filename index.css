@@ -87,6 +87,6 @@ body {
     cursor: pointer;
     border: 0 solid #0bd3d3;
     background-color: #f890e7;
-
+    box-shadow: #f890e7 0px 54px 55px, #0bd3d3 0px -12px 30px, white 0px 4px 6px, white 0px 12px 13px, white 0px -3px 5px;
 
 }
