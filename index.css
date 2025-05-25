@@ -54,6 +54,7 @@ body {
 .score-div {
     background-color: #0bd3d3;
     font-size: 4rem;
+    width: 110px;
     padding: 0.5rem 2rem;
     display: flex;
     justify-content: center;
@@ -69,6 +70,7 @@ body {
     /* background-color: #f890e7; */
     display: flex;
     justify-content: space-between;
+    width: 110px;
     gap: 0.3rem;
 }
 
