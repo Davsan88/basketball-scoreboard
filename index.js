@@ -4,15 +4,34 @@ const guestScore = document.getElementById("guest-score")
 console.log(heatScore)
 console.log(guestScore)
 
-let heatCount = 0
-let guestCount = 0
+let heat = 0
+let guest = 0
 
-const addPoints = (bucket) => {
-    heatCount += bucket
+const addPoints = (team, bucket) => {
+    if (team === heat) {
+        heat += bucket
+    } else {
+        guest += bucket
+    }
 }
 
 
-addPoints(3)
-console.log(heatCount)
 
-heatScore.textContent = heatCount
+
+addPoints(heat, 3)
+addPoints(heat, 3)
+addPoints(guest, 3)
+addPoints(guest, 3)
+addPoints(heat, 3)
+addPoints(heat, 3)
+addPoints(guest, 3)
+addPoints(guest, 3)
+addPoints(heat, 2)
+addPoints(heat, 2)
+addPoints(guest, 1)
+addPoints(guest, 1)
+console.log(heat)
+console.log(guest)
+
+heatScore.textContent = heat
+guestScore.textContent = guest
