@@ -1,37 +1,24 @@
+const scoreBtns = document.querySelectorAll("button")
+console.log(scoreBtns)
+const scores = []
 
-const heatScore = document.getElementById("heat-score")
-const guestScore = document.getElementById("guest-score")
-console.log(heatScore)
-console.log(guestScore)
+scoreBtns.forEach((button) => {
+    button.addEventListener("click", function() {
+        const team = button.dataset.team
+        const score = parseInt(button.dataset.score)
+        const scoreDiv = document.getElementById(`${team}-score`)
+        const span = scoreDiv.querySelector("span")
 
-let heat = 0
-let guest = 0
+        let teamScore = parseInt(span.textContent)
+        teamScore += score
+        span.textContent = teamScore
 
-const addPoints = (team, bucket) => {
-    if (team === heat) {
-        heat += bucket
-    } else {
-        guest += bucket
-    }
-}
+        localStorage.setItem("scores", scoreDiv.span.textContent)
 
+        console.log(team)
+        console.log(score)
+        console.log(span)
 
+    })
+})
 
-
-addPoints(heat, 3)
-addPoints(heat, 3)
-addPoints(guest, 3)
-addPoints(guest, 3)
-addPoints(heat, 3)
-addPoints(heat, 3)
-addPoints(guest, 3)
-addPoints(guest, 3)
-addPoints(heat, 2)
-addPoints(heat, 2)
-addPoints(guest, 1)
-addPoints(guest, 1)
-console.log(heat)
-console.log(guest)
-
-heatScore.textContent = heat
-guestScore.textContent = guest
