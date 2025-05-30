@@ -19,7 +19,7 @@ scoreBtns.forEach((button) => {
 
         scores = [heatScore.textContent, guestScore.textContent]
 
-        
+        localStorage.setItem("scores", JSON.stringify(scores))
     })
 })
 
