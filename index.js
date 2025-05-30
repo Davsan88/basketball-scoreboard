@@ -5,6 +5,13 @@ let heatScore = document.getElementById("heat-score")
 let guestScore = document.getElementById("guest-score")
 let scores = []
 
+let scoreFromLocalStorage = JSON.parse(localStorage.getItem("scores"))
+
+if (scoreFromLocalStorage) {
+    scores = scoreFromLocalStorage
+    heatScore.textContent = scores[0]
+    guestScore.textContent = scores[1]
+}
 
 scoreBtns.forEach((button) => {
     button.addEventListener("click", function () {
