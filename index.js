@@ -1,9 +1,14 @@
 const scoreBtns = document.querySelectorAll("button")
 console.log(scoreBtns)
-const scores = []
+
+let heatScore = document.getElementById("heat-score")
+let guestScore = document.getElementById("guest-score")
+
+
 
 scoreBtns.forEach((button) => {
-    button.addEventListener("click", function() {
+    button.addEventListener("click", function () {
+
         const team = button.dataset.team
         const score = parseInt(button.dataset.score)
         const teamScore = document.getElementById(`${team}-score`)
@@ -11,13 +16,6 @@ scoreBtns.forEach((button) => {
         let intScore = parseInt(teamScore.textContent)
         intScore += score
         teamScore.textContent = intScore
-
-        localStorage.setItem("scores", scoreDiv.span.textContent)
-
-        console.log(team)
-        console.log(score)
-        console.log(span)
-
     })
 })
 
