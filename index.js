@@ -3,7 +3,7 @@ console.log(scoreBtns)
 
 let heatScore = document.getElementById("heat-score")
 let guestScore = document.getElementById("guest-score")
-
+let scores = []
 
 
 scoreBtns.forEach((button) => {
@@ -16,6 +16,10 @@ scoreBtns.forEach((button) => {
         let intScore = parseInt(teamScore.textContent)
         intScore += score
         teamScore.textContent = intScore
+
+        scores = [heatScore.textContent, guestScore.textContent]
+
+        
     })
 })
 
