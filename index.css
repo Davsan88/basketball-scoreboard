@@ -29,24 +29,20 @@ body {
     width: 400px;
     background-color: black;
     padding: 2rem;
-    gap: 2rem;
+    gap: 1rem;
     border-radius: 6px;
-    /* box-shadow: 5px #f890e7; */
     box-shadow: #f890e7 0px 54px 55px, #0bd3d3 0px -12px 30px, white 0px 4px 6px, white 0px 12px 13px, white 0px -3px 5px;
 }
 
 .teams-div {
-    /* background-color: #630d54; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 1rem;
     width: 150px
 }
 
 .team-h3{
-    /* background-color: #f890e7; */
     font-size: 2rem;
     width: auto;
 
@@ -67,14 +63,13 @@ body {
 }
 
 .buttons-div {
-    /* background-color: #f890e7; */
     display: flex;
     justify-content: space-between;
     width: 110px;
     gap: 0.3rem;
 }
 
-.buttons-div button {
+button {
     color: white;
     width: 2rem;
     padding: 3px 2px;
@@ -85,10 +80,26 @@ body {
     border: 1px solid #0bd3d3;
 }
 
-.buttons-div button:hover {
+button:hover {
     cursor: pointer;
     border: 0 solid #0bd3d3;
     background-color: #f890e7;
     box-shadow: #f890e7 0px 54px 55px, #0bd3d3 0px -12px 30px, white 0px 4px 6px, white 0px 12px 13px, white 0px -3px 5px;
+}
 
+#reset-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#reset-btn {
+    width: auto;
+    padding: 3px 5px;
+}
+
+#reset-btn:hover {
+    border: 0 solid #f890e7;
+    background-color: #0bd3d3;
+    box-shadow: #0bd3d3 0px 54px 55px, #f890e7 0px -12px 30px, white 0px 4px 6px, white 0px 12px 13px, white 0px -3px 5px;
 }
