@@ -16,6 +16,7 @@ if (scoreFromLocalStorage) {
 
 scoreBtns.forEach((button) => {
     button.addEventListener("click", function () {
+        if (!button.dataset.team || !button.dataset.score) return
 
         const team = button.dataset.team
         const score = parseInt(button.dataset.score)
