@@ -1,5 +1,6 @@
 const scoreBtns = document.querySelectorAll("button")
-console.log(scoreBtns)
+const resetBtn = document.getElementById("reset-btn")
+// console.log(resetBtn)
 
 let heatScore = document.getElementById("heat-score")
 let guestScore = document.getElementById("guest-score")
@@ -29,4 +30,14 @@ scoreBtns.forEach((button) => {
         localStorage.setItem("scores", JSON.stringify(scores))
     })
 })
+
+resetBtn.addEventListener("click", function() {
+    localStorage.clear()
+
+    heatScore.textContent = "0"
+    guestScore.textContent = "0"
+
+})
+
+
 
