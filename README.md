@@ -3,7 +3,7 @@
 Hey there! 👋  
 This is a simple but polished basketball scoreboard built using vanilla JavaScript, HTML, and CSS. 
 
-👉 [Live Demo](https://miamivicescoreboard.netlify.app/)_(opens in a new tab)_
+👉 [Live Demo](https://miamivicescoreboard.netlify.app/)
 
 It was originally created as a foundational JavaScript exercise, but I decided to take it a step further — adding dynamic interactivity, custom fonts, persistent state with `localStorage`, and a reset feature.
 
