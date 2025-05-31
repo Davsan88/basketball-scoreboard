@@ -1,7 +1,11 @@
 # 🏀 JavaScript Scoreboard App
 
 Hey there! 👋  
-This is a simple but polished basketball scoreboard built using vanilla JavaScript, HTML, and CSS. It was originally created as a foundational JavaScript exercise, but I decided to take it a step further — adding dynamic interactivity, custom fonts, persistent state with `localStorage`, and a reset feature.
+This is a simple but polished basketball scoreboard built using vanilla JavaScript, HTML, and CSS. 
+
+👉 [Live Demo](https://miamivicescoreboard.netlify.app/)
+
+It was originally created as a foundational JavaScript exercise, but I decided to take it a step further — adding dynamic interactivity, custom fonts, persistent state with `localStorage`, and a reset feature.
 
 Whether you're learning JavaScript or just love hoops, this is a fun and practical project to explore DOM manipulation and event-driven logic.
 
@@ -72,6 +76,12 @@ This scoreboard is a solid MVP (Minimum Viable Product), but there’s room to g
 ## ✅ Why I'm Proud
 
 This project started from a basic one-button score counter and evolved into a fully interactive, stateful mini-app. I pushed beyond the course brief to create something more dynamic and visually engaging, while reinforcing real-world development practices. I'm happy with what I’ve learned and built!
+
+---
+
+🌐 Live Demo
+
+Check out the live version here: [https://miamivicescoreboard.netlify.app/](https://miamivicescoreboard.netlify.app/)
 
 ---
 
