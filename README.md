@@ -1,6 +1,6 @@
 # 🏀 JavaScript Scoreboard App
 
-Hey there! 👋  
+Hello there! 👋  
 This is a simple but polished basketball scoreboard built using vanilla JavaScript, HTML, and CSS. 
 
 👉 [Live Demo](https://miamivicescoreboard.netlify.app/)
