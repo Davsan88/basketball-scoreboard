@@ -26,6 +26,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
+    margin-top: 3em;
     width: 400px;
     background-color: black;
     padding: 2rem;
